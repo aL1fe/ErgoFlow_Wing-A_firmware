@@ -42,7 +42,7 @@
         mo1_layer {
             bindings = <
 &kp TILDE  &none  &none   &none                &none  &none  &none      &mc_pass06             &mc_pass07       &kp STAR         &kp FSLH         &none            &none  &bt BT_CLR
-&none      &none  &none   &none                &none  &none  &kp PG_UP  &kp KP_EQUAL           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS        &none  &none
+&none      &none  &none   &none                &none  &none  &kp PG_UP  &kp EQUAL              &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS        &none  &none
 &none      &none  &none   &none                &none  &none  &none      &kp LEFT_PARENTHESIS   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS         &none  &none
 &none      &none  &none   &kp C_AL_CALCULATOR  &none  &none  &kp PG_DN  &kp RIGHT_PARENTHESIS  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &mc_unicode_dot  &none  &kp BSPC
 &none      &none  &trans  &none                &none  &mo 3  &kp HOME   &kp END                &kp LS(INS)      &none            &kp KP_NUMBER_0  &none            &none  &kp LS(KP_ENTER)
