@@ -24,6 +24,13 @@
             bindings = <&kp N3 &kp N6 &kp N9 &kp N4 &kp N5 &kp N6>;
             label = "MC_PASS06";
         };
+
+        left_slash: left_slash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_4 &kp KP_NUMBER_7 &kt LEFT_ALT>;
+            label = "LEFT_SLASH";
+        };
     };
 
     keymap {
@@ -41,7 +48,7 @@
 
         mo1_layer {
             bindings = <
-&kp TILDE  &none  &none   &none                &none  &none  &none      &mc_pass06             &mc_pass07       &kp STAR         &kp FSLH         &none            &none  &bt BT_CLR
+&kp TILDE  &none  &none   &none                &none  &none  &none      &mc_pass06             &mc_pass07       &kp STAR         &left_slash      &none            &none  &bt BT_CLR
 &none      &none  &none   &none                &none  &none  &kp PG_UP  &kp EQUAL              &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS        &none  &none
 &none      &none  &none   &none                &none  &none  &none      &kp LEFT_PARENTHESIS   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS         &none  &none
 &none      &none  &none   &kp C_AL_CALCULATOR  &none  &none  &kp PG_DN  &kp RIGHT_PARENTHESIS  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &mc_unicode_dot  &none  &kp BSPC
@@ -54,7 +61,7 @@
 &none           &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &none              &kp F6           &kp F7          &kp F8  &kp F9  &kp F10         &kp F11    &kp F12
 &none           &none   &none   &none   &none   &none   &kp C_VOLUME_UP    &none            &none           &none   &none   &kp UNDERSCORE  &none      &none
 &kp KP_NUMLOCK  &none   &none   &none   &none   &none   &none              &kp LEFT_BRACE   &none           &none   &none   &none           &kp GRAVE  &none
-&none           &none   &none   &none   &none   &none   &kp C_VOLUME_DOWN  &kp RIGHT_BRACE  &none           &none   &none   &none           &none      &kp PAUSE_BREAK
+&none           &none   &none   &none   &none   &none   &kp C_VOLUME_DOWN  &kp RIGHT_BRACE  &none           &none   &none   &none           &none      &kp LC(BACKSPACE)
 &none           &none   &none   &none   &none   &none   &none              &none            &kp LC(INSERT)  &none   &none   &none           &none      &kp LC(KP_ENTER)
             >;
         };
